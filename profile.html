@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kenyans Abroad • My Profile</title>
+
+  <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+
+  <style>
+    body {
+      background: #0f172a;
+      color: white;
+      min-height: 100vh;
+      margin: 0;
+      font-family: system-ui, sans-serif;
+    }
+    .top-bar {
+      background: rgba(15, 23, 42, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .bottom-nav {
+      background: rgba(15, 23, 42, 0.94);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+    }
+    .cover-gradient {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.4), rgba(236,72,153,0.3));
+    }
+  </style>
+</head>
+<body class="pb-24">
+
+  <!-- Top Bar -->
+  <header class="top-bar sticky top-0 z-50 px-5 py-4 flex items-center justify-between">
+    <h1 class="text-2xl font-bold">My Profile</h1>
+    <button class="text-xl">✏️</button>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Cover + Avatar -->
+    <div class="relative h-64">
+      <div class="absolute inset-0 bg-gradient-to-br from-pink-800 via-purple-900 to-rose-900 cover-gradient"></div>
+      <div class="absolute inset-0 flex items-center justify-center text-9xl opacity-40">🌍</div>
+      
+      <!-- Avatar -->
+      <div class="absolute -bottom-16 left-6 w-32 h-32 rounded-full border-4 border-slate-900 bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center text-white text-5xl font-bold shadow-2xl">
+        CA
+      </div>
+    </div>
+
+    <!-- Profile Info -->
+    <div class="px-6 pt-20 pb-8">
+
+      <h1 class="text-3xl font-bold mb-1">Caleb</h1>
+      <p class="text-pink-400 text-lg mb-2">28 • Doha, Qatar</p>
+      <p class="text-slate-300 mb-6">
+        Originally from Nairobi • Software Engineer • Loves football, nyama choma & deep conversations
+      </p>
+
+      <div class="grid grid-cols-3 gap-4 mb-8 text-center">
+        <div class="bg-slate-800/60 p-4 rounded-xl">
+          <div class="text-2xl font-bold text-pink-400">187</div>
+          <div class="text-xs text-slate-400">Matches</div>
+        </div>
+        <div class="bg-slate-800/60 p-4 rounded-xl">
+          <div class="text-2xl font-bold text-pink-400">42</div>
+          <div class="text-xs text-slate-400">Connections</div>
+        </div>
+        <div class="bg-slate-800/60 p-4 rounded-xl">
+          <div class="text-2xl font-bold text-pink-400">3</div>
+          <div class="text-xs text-slate-400">Countries</div>
+        </div>
+      </div>
+
+      <!-- Interests -->
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold mb-4">Interests</h3>
+        <div class="flex flex-wrap gap-2">
+          <span class="bg-slate-700/70 px-4 py-2 rounded-full text-sm">Football</span>
+          <span class="bg-slate-700/70 px-4 py-2 rounded-full text-sm">Gospel Music</span>
+          <span class="bg-slate-700/70 px-4 py-2 rounded-full text-sm">Travel</span>
+          <span class="bg-slate-700/70 px-4 py-2 rounded-full text-sm">Coding</span>
+          <span class="bg-slate-700/70 px-4 py-2 rounded-full text-sm">Nyama Choma</span>
+          <span class="bg-slate-700/70 px-4 py-2 rounded-full text-sm">Movies</span>
+        </div>
+      </div>
+
+      <!-- Bio -->
+      <div class="mb-8">
+        <h3 class="text-xl font-semibold mb-3">About me</h3>
+        <p class="text-slate-300 leading-relaxed">
+          Diaspora life keeps me busy, but I'm always down for good vibes and real connection. 
+          Looking for someone who understands both worlds – home and abroad.
+          Bonus points if you can make good chapo! 😄
+        </p>
+      </div>
+
+      <!-- Buttons -->
+      <div class="grid grid-cols-2 gap-4">
+        <button class="bg-slate-700 hover:bg-slate-600 text-white font-medium py-3.5 rounded-xl transition">
+          Edit Profile
+        </button>
+        <button class="bg-gradient-to-r from-pink-600 to-rose-600 hover:brightness-110 text-white font-medium py-3.5 rounded-xl transition">
+          Preview Profile
+        </button>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav flex justify-around items-center py-3">
+    <a href="home.html" class="flex flex-col items-center text-slate-400 hover:text-white">
+      <span class="text-3xl">🏠</span>
+      <span class="text-xs mt-1">Home</span>
+    </a>
+    <a href="#" class="flex flex-col items-center text-slate-400 hover:text-white">
+      <span class="text-3xl">❤️</span>
+      <span class="text-xs mt-1">Matches</span>
+    </a>
+    <a href="messages.html" class="flex flex-col items-center text-slate-400 hover:text-white">
+      <span class="text-3xl">💬</span>
+      <span class="text-xs mt-1">Messages</span>
+    </a>
+    <div class="flex flex-col items-center text-pink-500">
+      <span class="text-3xl">👤</span>
+      <span class="text-xs mt-1 font-medium">Me</span>
+    </div>
+  </nav>
+
+</body>
+</html>

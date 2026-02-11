@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kenyans Abroad • Home</title>
+
+  <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+
+  <style>
+    body { background: linear-gradient(135deg, #0f172a 0%, #0e2a3f 100%); color: white; min-height: 100vh; margin: 0; font-family: system-ui, sans-serif; }
+    .top-bar { background: rgba(15, 23, 42, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255,255,255,0.06); }
+    .bottom-nav { background: rgba(15, 23, 42, 0.94); backdrop-filter: blur(12px); border-top: 1px solid rgba(255,255,255,0.06); position: fixed; bottom: 0; left: 0; right: 0; z-index: 50; }
+    .profile-card { background: rgba(30, 41, 59, 0.78); border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; overflow: hidden; transition: transform 0.2s; }
+    .profile-card:hover { transform: translateY(-6px); }
+  </style>
+</head>
+<body class="pb-24">
+
+  <header class="top-bar sticky top-0 z-50 px-5 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <span class="text-3xl">❤️</span>
+      <h1 class="text-2xl font-extrabold">
+        Kenyans<span class="text-pink-500">Abroad</span>
+      </h1>
+    </div>
+    <div class="flex items-center gap-6">
+      <span class="text-2xl relative">🔔 <span class="absolute -top-1 -right-1 bg-pink-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">3</span></span>
+      <div class="w-10 h-10 rounded-full bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center font-bold shadow-md">CA</div>
+    </div>
+  </header>
+
+  <main class="px-5 pt-6">
+
+    <div class="text-center mb-10">
+      <h2 class="text-3xl font-bold mb-2">Welcome back, Caleb</h2>
+      <p class="text-slate-300 text-lg">Discover meaningful connections today</p>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mb-10">
+      <div class="bg-gradient-to-br from-pink-900/30 to-purple-900/20 p-6 rounded-2xl border border-pink-500/20 text-center">
+        <div class="text-4xl font-extrabold text-pink-400">19</div>
+        <div class="text-sm text-slate-300 mt-1">New Matches</div>
+      </div>
+      <div class="bg-gradient-to-br from-rose-900/30 to-pink-900/20 p-6 rounded-2xl border border-rose-500/20 text-center">
+        <div class="text-4xl font-extrabold text-rose-400">8</div>
+        <div class="text-sm text-slate-300 mt-1">Unread Messages</div>
+      </div>
+    </div>
+
+    <div class="mb-6">
+      <h3 class="text-2xl font-semibold mb-5 flex items-center gap-2">
+        <span>✨</span> Recommended for you
+      </h3>
+
+      <div class="space-y-6">
+        <div class="profile-card">
+          <div class="relative h-64 bg-gradient-to-br from-pink-800 to-purple-900">
+            <div class="absolute inset-0 flex items-center justify-center text-8xl opacity-40">👩🏾</div>
+            <div class="absolute bottom-4 left-4 z-10">
+              <h4 class="text-2xl font-bold drop-shadow-lg">Aisha</h4>
+              <p class="text-sm text-white/90">28 • London</p>
+            </div>
+            <div class="absolute top-4 right-4 z-10 bg-green-600/80 text-white text-xs px-2.5 py-1 rounded-full backdrop-blur-sm">
+              Online
+            </div>
+          </div>
+          <div class="p-5">
+            <p class="text-slate-200 text-sm mb-5">
+              Love deep conversations, gospel nights and good food...
+            </p>
+            <button class="w-full bg-gradient-to-r from-pink-600 to-rose-600 hover:brightness-110 text-white font-medium py-3 rounded-xl transition">
+              Send a message
+            </button>
+          </div>
+        </div>
+
+        <!-- More profiles can be added here -->
+      </div>
+    </div>
+
+  </main>
+
+  <nav class="bottom-nav flex justify-around items-center py-3">
+    <div class="flex flex-col items-center text-pink-500">
+      <span class="text-3xl">🏠</span>
+      <span class="text-xs mt-1 font-medium">Home</span>
+    </div>
+    <a href="#" class="flex flex-col items-center text-slate-400 hover:text-white">
+      <span class="text-3xl">❤️</span>
+      <span class="text-xs mt-1">Matches</span>
+    </a>
+    <a href="messages.html" class="flex flex-col items-center text-slate-400 hover:text-white">
+      <span class="text-3xl">💬</span>
+      <span class="text-xs mt-1">Messages</span>
+    </a>
+    <a href="profile.html" class="flex flex-col items-center text-slate-400 hover:text-white">
+      <span class="text-3xl">👤</span>
+      <span class="text-xs mt-1">Me</span>
+    </a>
+  </nav>
+
+</body>
+</html>

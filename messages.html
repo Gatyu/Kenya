@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kenyans Abroad • Messages</title>
+
+  <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+
+  <style>
+    body {
+      background: #0f172a;
+      color: white;
+      min-height: 100vh;
+      margin: 0;
+      font-family: system-ui, sans-serif;
+    }
+    .top-bar {
+      background: rgba(15, 23, 42, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .bottom-nav {
+      background: rgba(15, 23, 42, 0.94);
+      backdrop-filter: blur(12px);
+      border-top: 1px solid rgba(255,255,255,0.06);
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+    }
+    .chat-item:hover {
+      background: rgba(51, 65, 85, 0.4);
+    }
+  </style>
+</head>
+<body class="pb-24">
+
+  <!-- Top Bar -->
+  <header class="top-bar sticky top-0 z-50 px-5 py-4 flex items-center justify-between">
+    <h1 class="text-2xl font-bold">
+      Messages
+    </h1>
+    <button class="text-2xl">✎</button>
+  </header>
+
+  <!-- Messages List -->
+  <main class="px-4 pt-4">
+
+    <div class="space-y-3">
+
+      <!-- Chat Item 1 -->
+      <a href="#chat" class="chat-item flex items-center gap-4 p-4 rounded-2xl transition">
+        <div class="relative">
+          <div class="w-14 h-14 rounded-full bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center text-white font-bold">
+            A
+          </div>
+          <span class="absolute bottom-0 right-0 w-4 h-4 bg-green-500 rounded-full border-2 border-slate-900"></span>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex justify-between items-baseline">
+            <h3 class="font-semibold truncate">Aisha M.</h3>
+            <span class="text-xs text-slate-400">12:41</span>
+          </div>
+          <p class="text-sm text-slate-400 truncate">
+            Hey Caleb, how's life in Doha? 😊
+          </p>
+        </div>
+        <div class="w-6 h-6 bg-pink-600 rounded-full text-xs flex items-center justify-center font-bold">2</div>
+      </a>
+
+      <!-- Chat Item 2 -->
+      <a href="#chat" class="chat-item flex items-center gap-4 p-4 rounded-2xl transition">
+        <div class="relative">
+          <div class="w-14 h-14 rounded-full bg-gradient-to-br from-purple-600 to-indigo-600 flex items-center justify-center text-white font-bold">
+            K
+          </div>
+          <span class="absolute bottom-0 right-0 w-4 h-4 bg-green-500 rounded-full border-2 border-slate-900"></span>
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex justify-between items-baseline">
+            <h3 class="font-semibold truncate">Kevin O.</h3>
+            <span class="text-xs text-slate-400">Yesterday</span>
+          </div>
+          <p class="text-sm text-slate-400 truncate">
+            Saw your story... that view is insane! 🔥
+          </p>
+        </div>
+      </a>
+
+      <!-- Chat Item 3 -->
+      <div class="chat-item flex items-center gap-4 p-4 rounded-2xl opacity-70">
+        <div class="w-14 h-14 rounded-full bg-slate-700 flex items-center justify-center text-slate-400">
+          S
+        </div>
+        <div class="flex-1 min-w-0">
+          <div class="flex justify-between items-baseline">
+            <h3 class="font-semibold truncate text-slate-400">Sarah K.</h3>
+            <span class="text-xs text-slate-500">2 days ago</span>
+          </div>
+          <p class="text-sm text-slate-500 truncate">
+            Hi! How are you doing?
+          </p>
+        </div>
+      </div>
+
+      <!-- More chat items can be added here -->
+
+    </div>
+
+  </main>
+
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav flex justify-around items-center py-3">
+    <a href="home.html" class="flex flex-col items-center text-slate-400 hover:text-white">
+      <span class="text-3xl">🏠</span>
+      <span class="text-xs mt-1">Home</span>
+    </a>
+    <a href="#" class="flex flex-col items-center text-slate-400 hover:text-white">
+      <span class="text-3xl">❤️</span>
+      <span class="text-xs mt-1">Matches</span>
+    </a>
+    <div class="flex flex-col items-center text-pink-500">
+      <span class="text-3xl">💬</span>
+      <span class="text-xs mt-1 font-medium">Messages</span>
+    </div>
+    <a href="profile.html" class="flex flex-col items-center text-slate-400 hover:text-white">
+      <span class="text-3xl">👤</span>
+      <span class="text-xs mt-1">Me</span>
+    </a>
+  </nav>
+
+</body>
+</html>
