@@ -3,72 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kenyans Abroad • Sign Up</title>
-
-  <script src="https://cdn.tailwindcss.com/3.4.1"></script>
-
+  <title>Harambee Connect • Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { background: #0f172a; color: white; min-height: 100vh; margin: 0; font-family: system-ui, sans-serif; display: flex; align-items: center; justify-content: center; padding: 1rem; }
-    .bg-overlay { position: fixed; inset: 0; background: url('https://images.unsplash.com/photo-1600948836101-f9ffda4a4c4e?w=800') center/cover; opacity: 0.15; z-index: -1; }
-    .card { background: rgba(30, 41, 59, 0.92); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; backdrop-filter: blur(8px); padding: 1.75rem; width: 100%; max-width: 420px; }
-    input { background: rgba(51, 65, 85, 0.6); border: 1px solid #475569; border-radius: 8px; padding: 0.9rem 1rem; color: white; width: 100%; font-size: 1rem; }
-    input:focus { outline: none; border-color: #ec4899; box-shadow: 0 0 0 3px rgba(236,72,153,0.2); }
+    body {
+      background: #f8fafc;
+      color: #1e293b;
+      min-height: 100vh;
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+    .top-bar {
+      background: white;
+      border-bottom: 1px solid #e2e8f0;
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .bottom-nav {
+      background: white;
+      border-top: 1px solid #e2e8f0;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 50;
+    }
+    .profile-card {
+      background: white;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
+      transition: transform 0.2s;
+    }
+    .profile-card:hover {
+      transform: translateY(-4px);
+    }
+    .photo-overlay {
+      background: linear-gradient(to top, rgba(0,0,0,0.6) 0%, transparent 60%);
+    }
   </style>
 </head>
-<body>
+<body class="pb-20">
 
-  <div class="bg-overlay"></div>
-
-  <div class="card">
-
-    <div class="text-center mb-8">
-      <div class="flex items-center justify-center gap-3 mb-2">
-        <span class="text-4xl">❤️</span>
-        <h1 class="text-3xl font-bold">
-          Kenyans<span class="text-pink-500">Abroad</span>
-        </h1>
+  <!-- Top Bar -->
+  <header class="top-bar px-5 py-4 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="text-3xl">🦒</div>
+      <h1 class="text-2xl font-bold text-gray-800">
+        Harambee Connect
+      </h1>
+    </div>
+    <div class="flex items-center gap-6">
+      <button class="relative text-2xl">
+        🔔
+        <span class="absolute -top-1 -right-1 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold">3</span>
+      </button>
+      <div class="w-10 h-10 rounded-full bg-gradient-to-br from-green-600 to-emerald-700 flex items-center justify-center text-white font-bold shadow-md">
+        CA
       </div>
-      <p class="text-slate-300 text-base">
-        Join the diaspora community
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="px-5 pt-6">
+
+    <!-- Welcome -->
+    <div class="mb-8">
+      <h2 class="text-2xl font-bold text-gray-800">
+        Welcome back, Caleb!
+      </h2>
+      <p class="text-gray-600 mt-1">
+        Ready to meet new people today?
       </p>
     </div>
 
-    <div class="space-y-5">
+    <!-- Quick Stats -->
+    <div class="grid grid-cols-2 gap-4 mb-10">
+      <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-5 rounded-2xl border border-green-100 text-center">
+        <div class="text-4xl font-bold text-green-700">24</div>
+        <div class="text-sm text-gray-600 mt-1">New Matches</div>
+      </div>
+      <div class="bg-gradient-to-br from-emerald-50 to-green-50 p-5 rounded-2xl border border-emerald-100 text-center">
+        <div class="text-4xl font-bold text-emerald-700">9</div>
+        <div class="text-sm text-gray-600 mt-1">Unread Messages</div>
+      </div>
+    </div>
 
-      <div>
-        <label class="block text-sm text-slate-300 mb-2">Full name</label>
-        <input type="text" placeholder="John Mwangi" />
+    <!-- Recommended Profiles -->
+    <h3 class="text-xl font-semibold text-gray-800 mb-5">
+      Recommended for you
+    </h3>
+
+    <div class="space-y-6">
+
+      <!-- Profile 1 -->
+      <div class="profile-card">
+        <div class="relative h-64">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent photo-overlay z-10"></div>
+          <div class="absolute inset-0 flex items-center justify-center text-8xl opacity-30 z-0">👩🏾</div>
+          <div class="absolute bottom-5 left-5 z-20 text-white">
+            <h4 class="text-2xl font-bold drop-shadow-md">Aisha</h4>
+            <p class="text-sm drop-shadow-md">28 • London, UK</p>
+          </div>
+          <div class="absolute top-4 right-4 z-20 bg-green-600 text-white text-xs px-3 py-1 rounded-full font-medium backdrop-blur-sm">
+            Online
+          </div>
+        </div>
+        <div class="p-5">
+          <p class="text-gray-700 text-sm mb-4 line-clamp-3">
+            "Looking for someone genuine who understands long-distance life, loves good food, gospel music and deep conversations."
+          </p>
+          <button class="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 rounded-xl transition">
+            Send a message
+          </button>
+        </div>
       </div>
 
-      <div>
-        <label class="block text-sm text-slate-300 mb-2">Email</label>
-        <input type="email" placeholder="yourname@gmail.com" />
+      <!-- Profile 2 -->
+      <div class="profile-card">
+        <div class="relative h-64">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent photo-overlay z-10"></div>
+          <div class="absolute inset-0 flex items-center justify-center text-8xl opacity-30 z-0">👨🏾</div>
+          <div class="absolute bottom-5 left-5 z-20 text-white">
+            <h4 class="text-2xl font-bold drop-shadow-md">Kevin</h4>
+            <p class="text-sm drop-shadow-md">32 • Dubai, UAE</p>
+          </div>
+          <div class="absolute top-4 right-4 z-20 bg-green-600 text-white text-xs px-3 py-1 rounded-full font-medium backdrop-blur-sm">
+            Active 5m ago
+          </div>
+        </div>
+        <div class="p-5">
+          <p class="text-gray-700 text-sm mb-4 line-clamp-3">
+            "Engineer by day, football lover by night. Looking for someone real who gets the diaspora hustle."
+          </p>
+          <button class="w-full bg-green-600 hover:bg-green-700 text-white font-medium py-3 rounded-xl transition">
+            Like & Chat
+          </button>
+        </div>
       </div>
 
-      <div>
-        <label class="block text-sm text-slate-300 mb-2">Password</label>
-        <input type="password" placeholder="••••••••" />
-      </div>
-
-      <div class="flex items-start gap-2 text-sm">
-        <input type="checkbox" class="mt-1 w-4 h-4 accent-pink-600 rounded" />
-        <span class="text-slate-300">
-          I agree to the <a href="#" class="text-pink-400">Terms</a> & <a href="#" class="text-pink-400">Privacy</a>
-        </span>
-      </div>
-
-      <a href="home.html" class="block w-full bg-gradient-to-r from-pink-600 to-rose-600 hover:brightness-110 text-white font-bold py-3.5 rounded-xl text-center transition">
-        Create Account
-      </a>
+      <!-- You can add more profile cards here -->
 
     </div>
 
-    <p class="text-center mt-6 text-slate-300">
-      Already have an account? 
-      <a href="index.html" class="text-pink-400 hover:text-pink-300 font-medium">Log in</a>
-    </p>
+  </main>
 
-  </div>
+  <!-- Bottom Navigation -->
+  <nav class="bottom-nav flex justify-around items-center py-3">
+    <div class="flex flex-col items-center text-green-700">
+      <span class="text-3xl">🏠</span>
+      <span class="text-xs mt-1 font-medium">Home</span>
+    </div>
+    <a href="#" class="flex flex-col items-center text-gray-600 hover:text-gray-800">
+      <span class="text-3xl">❤️</span>
+      <span class="text-xs mt-1">Matches</span>
+    </a>
+    <a href="messages.html" class="flex flex-col items-center text-gray-600 hover:text-gray-800">
+      <span class="text-3xl">💬</span>
+      <span class="text-xs mt-1">Messages</span>
+    </a>
+    <a href="profile.html" class="flex flex-col items-center text-gray-600 hover:text-gray-800">
+      <span class="text-3xl">👤</span>
+      <span class="text-xs mt-1">Me</span>
+    </a>
+  </nav>
 
 </body>
 </html>
